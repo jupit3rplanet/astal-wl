@@ -5,6 +5,8 @@
 
 %global _vpath_srcdir lib/wl/wl
 
+%global __requires_exclude ^%{_libdir}/lib%{name}\\\\.so*
+
 %define libname %mklibname astal-wl
 %define devname %mklibname astal-wl -d
 
